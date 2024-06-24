@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>生日祝福</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ff6347;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5em;
+            color: #4682b4;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        audio {
+            margin-top: 20px;
+        }
+        .cake {
+            width: 200px;
+            height: 200px;
+            background-image: url('https://www.pexels.com/photo/lighted-candles-on-an-elegant-looking-cake-3023474/'); /* 替换为实际路径 */
+            background-size: cover;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>生日快乐，亲爱的阿姨！</h1>
+        <p>愿您的每一天都充满欢乐与幸福，身体健康，万事如意！</p>
+        <p>感谢您一直以来的关心和照顾，祝您笑口常开，生活美满！</p>
+        <div class="cake"></div>
+        <audio controls autoplay>
+            <source src="https://www.chosic.com/wp-content/uploads/2020/08/Happy-Birthday-To-You-Music-Box-Version.mp3" type="audio/mpeg"> <!-- 替换为实际路径 -->
+            您的浏览器不支持音频播放。
+        </audio>
+    </div>
+</body>
+</html>
